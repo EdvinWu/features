@@ -1,0 +1,23 @@
+version: "3.7"
+
+services:
+  postgres:
+    container_name: "features-postgres"
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+
+
+  app:
+    image: "features-be:local"
+    container_name: "feature-be"
+    build:
+      context: .
+      dockerfile: build/Dockerfile
+    volumes:
+      - ./:/go/src/features
+    ports:
+      - "8880:8880"
+

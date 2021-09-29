@@ -1,0 +1,18 @@
+server:
+  port: 8880
+
+postgres:
+  host: localhost
+  port: 5432
+  username: postgres
+  password: password
+  ssl-mode: disable
+  database: postgres
+  debug: true
+  max-idle-connections: 10
+  max-open-connections: 100
+  max-connection-ttl: 3h
+  migration-path: file://migration/postgres/
+
+logger:
+  level: debug
