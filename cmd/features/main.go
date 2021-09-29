@@ -3,7 +3,7 @@ package main
 import (
 	"features/config"
 	"features/internal/app"
-	"features/util"
+	"features/internal/util"
 )
 
 func main() {

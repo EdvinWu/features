@@ -7,7 +7,7 @@ import (
 	"features/internal/domain/feature/repository"
 	"features/internal/domain/feature/service"
 	"features/internal/server"
-	"features/util"
+	"features/internal/util"
 	"fmt"
 	"github.com/jmoiron/sqlx"
 	"github.com/sirupsen/logrus"
